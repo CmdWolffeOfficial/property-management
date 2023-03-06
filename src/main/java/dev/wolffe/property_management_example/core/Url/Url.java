@@ -1,7 +1,6 @@
 package dev.wolffe.property_management_example.core.Url;
 
 
-
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;
 

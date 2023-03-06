@@ -1,7 +1,6 @@
 package dev.wolffe.property_management_example.domain.property.dto;
 
 
-
 import dev.wolffe.property_management_example.domain.property.Property;
 import org.mapstruct.Mapper;
 

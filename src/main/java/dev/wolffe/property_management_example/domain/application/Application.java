@@ -5,6 +5,7 @@ import dev.wolffe.property_management_example.domain.property.Property;
 import dev.wolffe.property_management_example.domain.user.User;
 import jakarta.persistence.*;
 import org.hibernate.annotations.UuidGenerator;
+
 import java.util.UUID;
 
 @Entity

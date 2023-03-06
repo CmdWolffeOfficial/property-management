@@ -1,7 +1,6 @@
 package dev.wolffe.property_management_example.core.AlphabetHyphen;
 
 
-
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;
 
@@ -20,7 +19,6 @@ public @interface AlphabetHyphen {
     Class<?>[] groups() default {};
 
     Class<? extends Payload>[] payload() default {};
-
 
 
 }

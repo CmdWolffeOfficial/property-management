@@ -4,6 +4,7 @@ package dev.wolffe.property_management_example.domain.user;
 import dev.wolffe.property_management_example.domain.role.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.util.NoSuchElementException;
 import java.util.Optional;
 import java.util.UUID;
@@ -16,7 +17,6 @@ public class UserServiceImpl implements UserService {
     private UserRepository userRepository;
     @Autowired
     private RoleService roleService;
-
 
 
     @Autowired
@@ -54,7 +54,6 @@ public class UserServiceImpl implements UserService {
         }
         throw new NoSuchElementException("No user with id " + userId + " found");
     }
-
 
 
 }

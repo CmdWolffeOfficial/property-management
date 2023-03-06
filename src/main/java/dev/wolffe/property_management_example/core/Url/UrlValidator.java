@@ -6,7 +6,7 @@ import jakarta.validation.ConstraintValidatorContext;
 public class UrlValidator implements ConstraintValidator<Url, String> {
     @Override
     public boolean isValid(String value, ConstraintValidatorContext context) {
-        if(value==null){
+        if (value == null) {
             return false;
         }
         return value.matches(".*homegate.*");

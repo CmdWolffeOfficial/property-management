@@ -3,6 +3,7 @@ package dev.wolffe.property_management_example.domain.role;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.UuidGenerator;
+
 import java.util.UUID;
 
 @Entity
