@@ -2,8 +2,6 @@ package dev.wolffe.property_management_example.domain.user;
 
 
 import dev.wolffe.property_management_example.domain.role.RoleService;
-import dev.wolffe.property_management_example.domain.user.dto.UserDTO;
-import dev.wolffe.property_management_example.domain.user.dto.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +9,6 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 import java.util.UUID;
-import java.util.stream.Collectors;
 
 
 @Service
@@ -21,9 +18,6 @@ public class UserServiceImpl implements UserService {
     private UserRepository userRepository;
     @Autowired
     private RoleService roleService;
-
-    @Autowired
-    private UserMapper userMapper;
 
 
     @Autowired
