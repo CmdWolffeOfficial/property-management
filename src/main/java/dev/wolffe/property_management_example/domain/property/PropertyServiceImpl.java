@@ -63,7 +63,7 @@ public class PropertyServiceImpl implements PropertyService {
     public Property updateProperty(UUID propertyId, UUID userId, Property newProperty) {
         User user = userService.findById(userId);
         if (user.getUserRole().getRoleName().equals("Agent")) {
-            Property property = findPropertyById(propertyId);
+            Property property = findById(propertyId);
             if (property.getPropertyAgent().equals(user)) {
                 newProperty.setPropertyId(property.getPropertyId());
                 newProperty.setPropertyAgent(property.getPropertyAgent());
