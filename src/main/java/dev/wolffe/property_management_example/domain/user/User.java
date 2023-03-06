@@ -1,6 +1,7 @@
 package dev.wolffe.property_management_example.domain.user;
 
 
+import dev.wolffe.property_management_example.domain.role.Role;
 import jakarta.persistence.*;
 import org.hibernate.annotations.UuidGenerator;
 
@@ -22,9 +23,9 @@ public class User {
     @Column(name = "username")
     private String userName;
 
-    /*@ManyToOne
+    @ManyToOne
     @JoinColumn(name = "role_id")
-    private Role userRole;*/
+    private Role userRole;
 
 
     public UUID getUserId() {
@@ -51,12 +52,12 @@ public class User {
         this.userName = userName;
     }
 
-    /*public Role getUserRole() {
+    public Role getUserRole() {
         return userRole;
     }
 
     public void setUserRole(Role userRole) {
         this.userRole = userRole;
-    }*/
+    }
 }
 
