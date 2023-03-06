@@ -8,6 +8,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/users")
 public class UserController {
@@ -32,6 +34,14 @@ public class UserController {
     public ResponseEntity<UserDTO> findUserByEmail(@RequestParam("email") String userEmail) {
         return ResponseEntity.ok(userMapper.toDTO(userService.findByEmail(userEmail)));
     }
+
+    @GetMapping
+    public ResponseEntity<List<User>> getAllUsers() {
+        List<User> users = userService.findAll();
+        return new ResponseEntity<>(users, HttpStatus.OK);
+    }
+
+
 
 
 }
