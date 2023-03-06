@@ -1,4 +1,4 @@
-package dev.wolffe.property_management_example.role.dto;
+package dev.wolffe.property_management_example.domain.role.dto;
 
 
 public class RoleDTO {

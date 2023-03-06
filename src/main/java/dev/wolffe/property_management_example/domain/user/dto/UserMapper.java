@@ -1,7 +1,7 @@
-package dev.wolffe.property_management_example.user.dto;
+package dev.wolffe.property_management_example.domain.user.dto;
 
 
-import dev.wolffe.property_management_example.user.User;
+import dev.wolffe.property_management_example.domain.user.User;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

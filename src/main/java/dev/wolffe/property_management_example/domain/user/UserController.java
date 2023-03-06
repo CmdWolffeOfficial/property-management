@@ -1,8 +1,8 @@
-package dev.wolffe.property_management_example.user;
+package dev.wolffe.property_management_example.domain.user;
 
 
-import dev.wolffe.property_management_example.user.dto.UserDTO;
-import dev.wolffe.property_management_example.user.dto.UserMapper;
+import dev.wolffe.property_management_example.domain.user.dto.UserDTO;
+import dev.wolffe.property_management_example.domain.user.dto.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

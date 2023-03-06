@@ -1,4 +1,4 @@
-package dev.wolffe.property_management_example.user;
+package dev.wolffe.property_management_example.domain.user;
 
 
 import jakarta.persistence.*;

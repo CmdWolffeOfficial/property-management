@@ -1,4 +1,4 @@
-package dev.wolffe.property_management_example.role;
+package dev.wolffe.property_management_example.domain.role;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

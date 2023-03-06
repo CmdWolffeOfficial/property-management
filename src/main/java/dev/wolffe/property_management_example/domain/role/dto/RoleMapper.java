@@ -1,7 +1,7 @@
-package dev.wolffe.property_management_example.role.dto;
+package dev.wolffe.property_management_example.domain.role.dto;
 
 
-import dev.wolffe.property_management_example.role.Role;
+import dev.wolffe.property_management_example.domain.role.Role;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

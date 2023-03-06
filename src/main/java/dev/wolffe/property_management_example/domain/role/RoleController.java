@@ -1,8 +1,8 @@
-package dev.wolffe.property_management_example.role;
+package dev.wolffe.property_management_example.domain.role;
 
 
-import dev.wolffe.property_management_example.role.dto.RoleDTO;
-import dev.wolffe.property_management_example.role.dto.RoleMapper;
+import dev.wolffe.property_management_example.domain.role.dto.RoleDTO;
+import dev.wolffe.property_management_example.domain.role.dto.RoleMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

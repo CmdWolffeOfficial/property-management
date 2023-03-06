@@ -1,7 +1,7 @@
-package dev.wolffe.property_management_example.property;
+package dev.wolffe.property_management_example.domain.property;
 
 
-import dev.wolffe.property_management_example.user.User;
+import dev.wolffe.property_management_example.domain.user.User;
 import jakarta.persistence.*;
 import org.hibernate.annotations.UuidGenerator;
 import java.util.UUID;

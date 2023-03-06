@@ -1,4 +1,4 @@
-package dev.wolffe.property_management_example.user.dto;
+package dev.wolffe.property_management_example.domain.user.dto;
 
 
 public class UserDTO {
