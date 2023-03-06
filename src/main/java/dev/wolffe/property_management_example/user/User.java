@@ -13,7 +13,8 @@ public class User {
     @Id
     @GeneratedValue
     @UuidGenerator
-    private UUID id;
+    @Column(name = "user_id")
+    private UUID userId;
 
     @Column(name = "email")
     private String userEmail;
@@ -26,12 +27,12 @@ public class User {
     private Role userRole;*/
 
 
-    public UUID getId() {
-        return id;
+    public UUID getUserId() {
+        return userId;
     }
 
-    public void setId(UUID id) {
-        this.id = id;
+    public void setUserIdd(UUID userId) {
+        this.userId = userId;
     }
 
     public String getUserEmail() {
