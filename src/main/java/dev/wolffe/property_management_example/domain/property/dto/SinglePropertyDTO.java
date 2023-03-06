@@ -9,67 +9,67 @@ import org.hibernate.validator.constraints.Range;
 public class SinglePropertyDTO {
     public static class Canton {
         @AlphabetHyphen
-        private String canton;
+        private String propertyCanton;
 
         public String getCanton() {
-            return canton;
+            return propertyCanton;
         }
 
-        public void setCanton(String canton) {
-            this.canton = canton;
+        public void setCanton(String propertyCanton) {
+            this.propertyCanton = propertyCanton;
         }
     }
 
 
     public static class Name {
         @AlphabetNumb
-        private String name;
+        private String propertyName;
 
         public String getName() {
-            return name;
+            return propertyName;
         }
 
-        public void setName(String name) {
-            this.name = name;
+        public void setName(String propertyName) {
+            this.propertyName = propertyName;
         }
     }
 
     public static class Price {
         @Range(min = 500, max = 4500)
-        private int price;
+        private int propertyPrice;
 
         public int getPrice() {
-            return price;
+            return propertyPrice;
         }
 
-        public void setPrice(int price) {
-            this.price = price;
+        public void setPrice(int propertyPrice) {
+            this.propertyPrice = propertyPrice;
         }
     }
 
     public static class Size {
         @Min(1)
-        private int size;
+        private int propertySize;
 
         public int getSize() {
-            return size;
+            return propertySize;
         }
 
-        public void setSize(int size) {
-            this.size = size;
+        public void setSize(int propertySize) {
+            this.propertySize = propertySize;
         }
     }
 
     public static class Url {
         @dev.wolffe.property_management_example.core.Url.Url
-        private String Url;
+        private String propertyUrl;
 
         public String getUrl() {
-            return Url;
+            return propertyUrl;
         }
 
-        public void setUrl(String url) {
-            Url = url;
+        public void setUrl(String propertyUrl) {
+            propertyUrl = propertyUrl;
         }
     }
 }
